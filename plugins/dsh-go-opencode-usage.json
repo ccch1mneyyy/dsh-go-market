@@ -1,0 +1,11 @@
+{
+  "name": "dsh-go-opencode-usage",
+  "version": "0.1.0",
+  "title": { "zh": "Go 订阅额度", "en": "Go usage" },
+  "summary": {
+    "zh": "在输入框上方看 OpenCode Go 额度",
+    "en": "OpenCode Go usage in the composer strip"
+  },
+  "category": "tools",
+  "screenshots": []
+}
