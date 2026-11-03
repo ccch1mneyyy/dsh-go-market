@@ -1,0 +1,15 @@
+{
+  "name": "dsh-compact-manager",
+  "version": "1.0.1",
+  "title": {
+    "zh": "压缩管理",
+    "en": "Compaction"
+  },
+  "summary": {
+    "zh": "接管上下文压缩，可选模型压缩或本地机械折页",
+    "en": "Take over context compaction with a model or a local fold"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/tony92921/dsh-compact-manager"
+}
