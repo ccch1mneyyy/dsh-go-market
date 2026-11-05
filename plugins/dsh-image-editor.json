@@ -1,0 +1,15 @@
+{
+  "name": "dsh-image-editor",
+  "version": "0.2.0",
+  "title": {
+    "zh": "神火图层编辑器",
+    "en": "Image Editor"
+  },
+  "summary": {
+    "zh": "通过 MCP 上传图片、确认积分后分离图层，在外部浏览器编辑，按需导出 PSD 并下载到当前主机工作区。",
+    "en": "Upload images through MCP, separate layers after confirming the credit quote, edit in an external browser, and export PSD files to the active host workspace."
+  },
+  "category": "media",
+  "screenshots": [],
+  "homepage": "https://github.com/chenyth/dsh-image-editor"
+}
