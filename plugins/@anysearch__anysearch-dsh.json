@@ -1,0 +1,15 @@
+{
+  "name": "@anysearch/anysearch-dsh",
+  "version": "0.1.8",
+  "title": {
+    "zh": "AnySearch 联网搜索",
+    "en": "AnySearch"
+  },
+  "summary": {
+    "zh": "接入 AnySearch 的联网搜索与网页抓取，并附带一组高级搜索工具，适合需要实时网页结果的对话。",
+    "en": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH)"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/anysearch-team/anysearch-dsh"
+}
