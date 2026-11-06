@@ -1,0 +1,15 @@
+{
+  "name": "plugin-fast-adapt",
+  "version": "0.3.1",
+  "title": {
+    "zh": "插件快速适配",
+    "en": "Plugin Fast Adapt"
+  },
+  "summary": {
+    "zh": "DSH 插件升级适配与破坏性变更核查，兼五形态插件脚手架与宿主启动诊断",
+    "en": "Fast adapt DSH plugins for breaking changes, scaffolding, and startup diagnostics"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/taxueseek/plugin-fast-adapt"
+}
