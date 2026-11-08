@@ -6,10 +6,11 @@
     "node": ">=22"
   },
   "scripts": {
-    "test": "node --test",
+    "test": "node --test && python -m unittest discover -s test -p \"test_*.py\"",
     "check": "node scripts/check.mjs",
-    "build": "node scripts/build.mjs",
-    "watch": "node scripts/watch.mjs"
+    "build": "node scripts/build.mjs && python scripts/build_companions.py",
+    "watch": "node scripts/watch.mjs",
+    "check:companions": "python scripts/build_companions.py"
   },
   "dependencies": {
     "@deepseek-ai/dsh-plugin-market-index": "0.2.1-rc.2",
