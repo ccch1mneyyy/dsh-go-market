@@ -1,0 +1,15 @@
+{
+  "name": "dsh-go-presetboard",
+  "version": "1.0.1",
+  "title": {
+    "zh": "dsh-go-PresetBoard",
+    "en": "dsh-go-PresetBoard"
+  },
+  "summary": {
+    "zh": "输入框上方的预设板：分组、#标签、置顶、分享码、文件导入导出。",
+    "en": "A native preset board above the composer with groups, #tags, pinning, share codes and file import/export."
+  },
+  "category": "productivity",
+  "screenshots": [],
+  "homepage": "https://github.com/moriro/dsh-go-PresetBoard"
+}
