@@ -1,0 +1,15 @@
+{
+  "name": "dsh-convenient-mode",
+  "version": "0.9.0",
+  "title": {
+    "zh": "DS 便捷模式",
+    "en": "DS Convenient Mode"
+  },
+  "summary": {
+    "zh": "29 个 ds-* 技能进预设：每轮必守 + 任务索引 + 5 条守卫，另带意图路由、推理强度路由与手机快捷胶囊",
+    "en": "Folds 29 ds-* skills into one agent preset: standing rules, a task index, five guard checks, intent and effort routing, plus phone shortcuts"
+  },
+  "category": "productivity",
+  "screenshots": [],
+  "homepage": "https://github.com/ShawnSun-debug/dsh-stack"
+}
