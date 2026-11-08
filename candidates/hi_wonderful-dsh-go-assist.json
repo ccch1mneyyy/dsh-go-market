@@ -1,0 +1,15 @@
+{
+  "name": "@hi_wonderful/dsh-go-assist",
+  "version": "1.0.0",
+  "title": {
+    "zh": "语音助手桥接",
+    "en": "Voice assistant bridge"
+  },
+  "summary": {
+    "zh": "在引擎内托管离线语音识别与本地小模型路由：语音任务先问本地 0.6B，问不了再交给 DSH 跑一轮",
+    "en": "Hosts offline ASR and a local small-model router inside the engine: voice tasks are answered locally first, then handed to DSH"
+  },
+  "category": "productivity",
+  "screenshots": [],
+  "homepage": "https://github.com/cj5pvj4vjt-ux/dsh-go-assist"
+}
