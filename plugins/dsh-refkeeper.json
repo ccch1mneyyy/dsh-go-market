@@ -1,0 +1,19 @@
+{
+  "name": "dsh-refkeeper",
+  "version": "0.1.3",
+  "title": {
+    "zh": "引用管理器",
+    "en": "Reference Keeper"
+  },
+  "summary": {
+    "zh": "收集对话里引用过的文献，逐条到 Crossref、OpenAlex、arXiv、DataCite 核对，通过核对的导出为 BibTeX 或 RIS。",
+    "en": "Collects the papers a conversation cited, checks each against Crossref, OpenAlex, arXiv and DataCite, and exports the confirmed entries as BibTeX or RIS."
+  },
+  "category": "tools",
+  "screenshots": [
+    "https://raw.githubusercontent.com/ymwang92/dsh-refkeeper/main/docs/images/panel-en.png",
+    "https://raw.githubusercontent.com/ymwang92/dsh-refkeeper/main/docs/images/panel-detail-en.png",
+    "https://raw.githubusercontent.com/ymwang92/dsh-refkeeper/main/docs/images/composer-en.png"
+  ],
+  "homepage": "https://github.com/ymwang92/dsh-refkeeper"
+}
