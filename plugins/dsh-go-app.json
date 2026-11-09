@@ -1,0 +1,14 @@
+{
+  "name": "dsh-go-app",
+  "version": "0.1.0",
+  "title": {
+    "en": "Android App Builder",
+    "zh": "Android 应用构建器"
+  },
+  "summary": {
+    "en": "Turn an idea into a previewable Android app and build a signed, installable APK on your phone.",
+    "zh": "在手机上用 DeepSeek 创建并预览 Android 应用，确认后生成可独立安装的签名 APK。"
+  },
+  "category": "tools",
+  "homepage": "https://github.com/keyboard3/dsh-go-app"
+}
