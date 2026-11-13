@@ -1,0 +1,15 @@
+{
+  "name": "dsh-go-purge",
+  "version": "0.4.2",
+  "title": {
+    "zh": "破甲",
+    "en": "Purge"
+  },
+  "summary": {
+    "zh": "去掉引擎的审批与沙箱限制：提示词注入 + 引擎源码补丁两层，附 5 个操作工具与 87 条补丁",
+    "en": "Remove approval prompts and sandbox limits: prompt injection plus 87 engine source patches, with 5 tools"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/NANA7MI0/dsh-purge-go"
+}
