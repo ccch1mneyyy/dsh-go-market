@@ -1,0 +1,15 @@
+{
+  "name": "dsh-gacha-calendar-go",
+  "version": "0.13.0",
+  "title": {
+    "zh": "二游日历 · 手机版",
+    "en": "Gacha Calendar Go"
+  },
+  "summary": {
+    "zh": "原生查看二游卡池与活动排期，支持关注游戏、搜索、倒计时和手动刷新。",
+    "en": "Native gacha and event schedules with game selection, search, countdowns and manual refresh."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/Sophiacyl/dsh-gacha-calendar-go"
+}
