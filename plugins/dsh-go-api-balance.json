@@ -1,0 +1,15 @@
+{
+  "name": "dsh-go-api-balance",
+  "version": "0.7.5",
+  "title": {
+    "zh": "API 余额",
+    "en": "API balance"
+  },
+  "summary": {
+    "zh": "一家一块卡片看 API 余额、近 7 天用量和订阅额度，支持 10 种内置平台与任意自定义接口",
+    "en": "API balances, 7-day usage and subscription quotas in one card per service; 10 presets plus any custom endpoint"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/boyexquisite/dsh-go-api-balance"
+}
