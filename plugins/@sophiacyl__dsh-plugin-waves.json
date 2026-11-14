@@ -1,0 +1,15 @@
+{
+  "name": "@sophiacyl/dsh-plugin-waves",
+  "version": "0.1.0-beta.2",
+  "title": {
+    "zh": "鸣潮 · 原生测试版",
+    "en": "Waves native beta"
+  },
+  "summary": {
+    "zh": "鸣潮查询、角色面板、练度与原生设置。基于 Loping151/dsh-plugin-waves 的手机适配；首次启动下载依赖与素材，登录可能与库街区互踢。",
+    "en": "Native Wuthering Waves queries, panels and settings, adapted from Loping151/dsh-plugin-waves. Downloads runtime assets on first use. Login may invalidate Kuro BBS sessions."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/Sophiacyl/dsh-plugin-waves/tree/release/npm"
+}
