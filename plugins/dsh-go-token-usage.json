@@ -1,0 +1,18 @@
+{
+  "name": "dsh-go-token-usage",
+  "version": "0.3.0",
+  "title": {
+    "zh": "Token 用量",
+    "en": "Token usage"
+  },
+  "summary": {
+    "zh": "本对话 / 今日 / 7 天 / 30 天的 token 用量与缓存命中，状态条带 DeepSeek 峰谷价，可生成用量卡片",
+    "en": "Token usage of this chat, today, 7 and 30 days with cache hits, a DeepSeek peak/off-peak tag on the strip, and a generated usage card"
+  },
+  "category": "productivity",
+  "screenshots": [
+    "https://raw.githubusercontent.com/boyexquisite/dsh-go-token-usage/main/docs/panel.jpg",
+    "https://raw.githubusercontent.com/boyexquisite/dsh-go-token-usage/main/docs/preview.png"
+  ],
+  "homepage": "https://github.com/boyexquisite/dsh-go-token-usage"
+}
