@@ -1,0 +1,15 @@
+{
+  "name": "dsh-go-adb-link",
+  "version": "1.2.4",
+  "title": {
+    "zh": "ADB 自动连接",
+    "en": "ADB auto-link"
+  },
+  "summary": {
+    "zh": "安装前需在手机端开启经典 TCP ADB（Stellar/Shizuku TCP 或 adb tcpip）；插件自动查找端口并保持连接，并让 AI 主动执行系统级 adb 命令（开启自动批准时可能不经再次确认）。",
+    "en": "Requires classic TCP ADB enabled on the phone (Stellar/Shizuku TCP or adb tcpip) before installing. Finds the ADB port and keeps it connected, and lets the AI run system-level adb commands proactively, which may run without another prompt when auto-approval is on."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/edgy7493/dsh-go-adb-link"
+}
