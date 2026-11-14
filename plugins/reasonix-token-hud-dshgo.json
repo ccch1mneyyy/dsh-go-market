@@ -1,0 +1,15 @@
+{
+  "name": "reasonix-token-hud-dshgo",
+  "version": "1.0.0-android",
+  "title": {
+    "zh": "用量与费用",
+    "en": "Usage & Cost"
+  },
+  "summary": {
+    "zh": "在 dsh-go 输入框上方实时显示会话 token 用量、上下文占用、估算费用和账户余额，并提供原生明细面板。",
+    "en": "Live session token usage, context occupancy, estimated cost and account balance in dsh-go, with a native detail panel."
+  },
+  "category": "productivity",
+  "screenshots": [],
+  "homepage": "https://github.com/beijiangwx/dsh-reasonix-token-hud/tree/main/dshgo"
+}
