@@ -1,0 +1,15 @@
+{
+  "name": "dsh-go-purge",
+  "version": "0.4.9",
+  "title": {
+    "zh": "破甲",
+    "en": "Purge"
+  },
+  "summary": {
+    "zh": "去掉引擎的审批与沙箱限制：提示词注入 + 86 条引擎源码补丁。装完还差一步——说一句「重打补丁」把补丁层打上（补丁改的是引擎源码，安装流程打不了），打完重启引擎。",
+    "en": "Remove approval prompts and sandbox limits: prompt injection plus 86 engine source patches. One more step after install: say \"repatch\" so the plugin patches the engine (install cannot do it), then restart the engine."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/NANA7MI0/dsh-purge-go"
+}
