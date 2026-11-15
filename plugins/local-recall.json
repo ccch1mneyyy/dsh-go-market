@@ -1,8 +1,14 @@
 {
   "name": "local-recall",
-  "version": "0.1.0",
-  "title": {"zh": "跨对话提取", "en": "Cross-chat recall"},
-  "summary": {"zh": "把其他对话里的提问和结论按关键词找出来，一键插进输入框", "en": "Search your other conversations and insert the relevant Q&A into the composer"},
+  "version": "0.1.1",
+  "title": {
+    "zh": "跨对话提取",
+    "en": "Cross-chat recall"
+  },
+  "summary": {
+    "zh": "把其他对话里的提问和结论按关键词找出来；用户提「之前的事」时模型先查历史对话，再联网",
+    "en": "Search your other conversations for past Q&A; the model checks history first, then the web"
+  },
   "category": "productivity",
   "screenshots": [],
   "homepage": "https://github.com/polear234/dsh-local-recall"
