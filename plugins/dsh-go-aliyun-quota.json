@@ -1,0 +1,15 @@
+{
+  "name": "dsh-go-aliyun-quota",
+  "version": "0.1.2",
+  "title": {
+    "zh": "阿里云额度",
+    "en": "Aliyun quota"
+  },
+  "summary": {
+    "zh": "在状态条和原生面板里看阿里云账户余额、代金券与到期提醒，以及按月、按模型的账单趋势和 token 用量；AccessKey 只存本机。",
+    "en": "Aliyun balance, coupons and expiry on a status strip and native panels, plus monthly spend and per-model token usage. The AccessKey stays on the device."
+  },
+  "category": "productivity",
+  "screenshots": [],
+  "homepage": "https://github.com/juicer139/dsh-go-aliyun-quota"
+}
