@@ -1,0 +1,18 @@
+{
+  "name": "dsh-suggestion-chips",
+  "version": "0.2.5",
+  "title": {
+    "zh": "回复建议按钮",
+    "en": "Suggestion Chips"
+  },
+  "summary": {
+    "zh": "每条回复下方显示可点击建议按钮：suggest_actions 工具与立场排序、L0 确定性兜底、高危操作草稿门禁与已采纳标记",
+    "en": "Clickable suggestion chips under every reply: suggest_actions tool, Level 0 deterministic fallback, high-risk draft gate, and adoption indicator"
+  },
+  "category": "productivity",
+  "screenshots": [
+    "https://raw.githubusercontent.com/taxueseek/dsh-suggestion-chips/main/assets/turn.en.png",
+    "https://raw.githubusercontent.com/taxueseek/dsh-suggestion-chips/main/assets/turn.zh.png"
+  ],
+  "homepage": "https://github.com/taxueseek/dsh-suggestion-chips"
+}
