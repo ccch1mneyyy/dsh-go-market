@@ -1,0 +1,15 @@
+{
+  "name": "dsh-transcript-import",
+  "version": "0.1.0",
+  "title": {
+    "zh": "聊天记录导入",
+    "en": "Transcript Import"
+  },
+  "summary": {
+    "zh": "把已有聊天记录导入成一个全新的 DSH 会话，保留思考链和随包图片，并在导入前询问是否补上 docx 等非图片附件，之后可以直接接着聊。",
+    "en": "Import an existing chat transcript into a brand-new DSH session, keeping thinking blocks and exported images, asking before attaching non-image files, so the conversation continues from that history."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/parofufu/OPENK/tree/main/02-DSH插件/dsh-transcript-import"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "dsh-go-usage-meter",
+  "version": "0.9.4",
+  "title": {
+    "zh": "模型用量",
+    "en": "Usage meter"
+  },
+  "summary": {
+    "zh": "在输入框胶囊和原生面板里查看各供应商的余额、token 用量与花费：内置 DeepSeek、豆包、WorkBuddy、Trae，也可添加 OpenRouter、硅基流动、火山方舟、月之暗面、智谱、混元或自定义余额接口；花费由本地账本按内置官方价目表（含峰谷价与汇率）折算，钱与积分的账分开记。",
+    "en": "Provider balances, token usage and spend in the composer strip and a native panel. Built in for DeepSeek, Doubao, WorkBuddy and Trae; add OpenRouter, SiliconFlow, Volcengine Ark, Moonshot, Zhipu, Hunyuan or a custom balance endpoint. Spend is computed locally from a ledger using a built-in official price table with peak/off-peak rates and a configurable FX rate, keeping money and credits separate."
+  },
+  "category": "productivity",
+  "screenshots": [
+    "https://raw.githubusercontent.com/YOUNG-FELIX/dsh-go-market/assets/docs/usage-meter/composer-strip.jpg",
+    "https://raw.githubusercontent.com/YOUNG-FELIX/dsh-go-market/assets/docs/usage-meter/usage-panel.jpg",
+    "https://raw.githubusercontent.com/YOUNG-FELIX/dsh-go-market/assets/docs/usage-meter/spend-donut.jpg",
+    "https://raw.githubusercontent.com/YOUNG-FELIX/dsh-go-market/assets/docs/usage-meter/spend-bars.jpg"
+  ]
+}
