@@ -1,0 +1,15 @@
+{
+  "name": "dsh-image-designer",
+  "version": "0.1.3",
+  "title": {
+    "zh": "神火设计师",
+    "en": "Image Designer"
+  },
+  "summary": {
+    "zh": "通过神火个人账号连接 AI 设计师，上传素材、获取提案、确认积分后生成并下载图片。",
+    "en": "Connect to Shenhuo AI designers with your personal account, upload materials, review proposals, and generate and download images after confirming the credit quote."
+  },
+  "category": "media",
+  "screenshots": [],
+  "homepage": "https://github.com/chenyth/dsh-image-designer"
+}
