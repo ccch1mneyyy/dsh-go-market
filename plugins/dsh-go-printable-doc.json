@@ -1,0 +1,15 @@
+{
+  "name": "dsh-go-printable-doc",
+  "version": "1.0.1",
+  "title": {
+    "zh": "打印文档",
+    "en": "Printable doc"
+  },
+  "summary": {
+    "zh": "把文章排成可直接打印的 A4 Word，附逐页预览",
+    "en": "Turn an article into a print-ready A4 Word document with page previews"
+  },
+  "category": "productivity",
+  "screenshots": [],
+  "homepage": "https://github.com/aishenkiki/dsh-go-printable-doc"
+}
