@@ -1,0 +1,15 @@
+{
+  "name": "dsh-reunion-import",
+  "version": "0.1.3",
+  "title": {
+    "zh": "重逢 · 一句话接着聊",
+    "en": "Reunion · one-shot continue"
+  },
+  "summary": {
+    "zh": "粘贴 DeepSeek 分享或 zip，一句话轻量续聊（约 3.5k 字，少灌全文）。",
+    "en": "Paste a DeepSeek share link or ZIP and continue lightly (~3.5k chars, not the full thread)."
+  },
+  "category": "productivity",
+  "screenshots": [],
+  "homepage": "https://github.com/liuwenji007/dsh-reunion-import"
+}
