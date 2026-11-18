@@ -68,7 +68,7 @@ npm run watch                 # 查 dist-tags.latest 并检查新版，输出 re
 部署配置与维护要求：
 
 - 创建 `ccch1mneyyy/dsh-go-market`，默认分支 main，允许 GitHub Actions 创建 PR，并启用 auto-merge 和 squash。
-- 为 main 配置严格分支保护：要求最新 base 和 `market/catalog` 状态；其他必须通过的检查也加入 required checks。按 GitHub Actions 来源约束此状态，避免其他写入者伪造。工作流检测缺少这条保护会拒绝自动合并，不会自行降低保护。
+- 为 main 配置严格分支保护：要求最新 base 和 `market/catalog` 状态；其他必须通过的检查也加入 required checks。按 GitHub Actions 来源约束此状态，避免其他写入者伪造。GITHUB_TOKEN 无法读取分支保护配置（GitHub Actions 的 permissions 不包含 Administration），工作流只校验仓库允许 auto-merge、PR 目标为 main、head 未变；strict 保护与 `market/catalog` 仍必须由维护者保持，工作流无法检测其是否被移除。
 - 在 Pages 设置选择 GitHub Actions 发布。`publish.yml` 只给部署作业 `pages:write` 和 `id-token:write`；无需 Cloudflare 密钥。
 - 单条插件 PR 用 `pull_request_target` 跑 **可信 base** 的代码，固定 base/head SHA 比较变更，再沿该 head 的 commit → tree → blob 读取唯一 JSON，验证它是普通文件；拒绝符号链接和子模块，绝不 checkout / 执行 PR 脚本。成功状态写在实际 PR head SHA 上；自动合并再次核对 SHA。其他维护变更不走自动合并，需要维护者审查与单独验证。
 - 每日 `watch.yml` 为通过扫描的新版创建只改一个条目的 PR，并显式调用 `workflow_dispatch` 复用完整检查。GitHub 的 GITHUB_TOKEN 不会递归触发普通 PR/push 事件；发布工作流另有每十分钟定时补偿（GitHub 排程可能延迟），手动 dispatch 也可立即发布。相关行为见 [GitHub 官方事件文档](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)。

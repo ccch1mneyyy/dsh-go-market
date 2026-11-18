@@ -1,0 +1,15 @@
+{
+  "name": "dsh-island-go",
+  "version": "0.1.0",
+  "title": {
+    "zh": "灵动岛",
+    "en": "Island"
+  },
+  "summary": {
+    "zh": "输入框上方一条状态：正在思考/回答/执行、上下文占用、今日估算费用；面板里有近 7 天用量和按模型的费用",
+    "en": "A status line above the composer (state, context usage, today's estimated cost) and a panel with 7-day usage and cost per model"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/a961282799-crypto/dsh-island-go"
+}

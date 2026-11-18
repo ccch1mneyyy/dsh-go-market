@@ -1,0 +1,14 @@
+{
+  "name": "dsh-local-history",
+  "version": "0.1.3",
+  "title": {
+    "zh": "DeepSeek 旧聊天导入",
+    "en": "DeepSeek Chat History Import"
+  },
+  "summary": {
+    "zh": "在安卓本机引擎中，把 DeepSeek 导出的聊天导入普通会话。上滑查看原问答，接着聊。导入在手机本地完成。",
+    "en": "Import selected chats from a DeepSeek export ZIP into regular local conversations on Android. Scroll through the original messages and continue chatting. Import runs on the device."
+  },
+  "category": "tools",
+  "homepage": "https://github.com/DIONG39/dsh-local-history"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "dsh-plugin-token-war",
+  "version": "0.7.0",
+  "title": {
+    "zh": "Token War",
+    "en": "Token War"
+  },
+  "summary": {
+    "zh": "DSH 侧栏自动经营小游戏：任务生产、模型军团、厂商事件、蒸馏与离线成长，单屏纯本地。",
+    "en": "A lightweight idle war game for the DSH sidebar: task economy, model army, vendor events, distillation and offline growth; single-screen and local-only."
+  },
+  "category": "other",
+  "screenshots": [
+    "https://raw.githubusercontent.com/JJJACKsong/dsh-plugin-token-war/main/docs/screenshots/06-mobile-390x700.png",
+    "https://raw.githubusercontent.com/JJJACKsong/dsh-plugin-token-war/main/docs/screenshots/01-main-1000x672.png",
+    "https://raw.githubusercontent.com/JJJACKsong/dsh-plugin-token-war/main/docs/screenshots/03-agent-reminder.png",
+    "https://raw.githubusercontent.com/JJJACKsong/dsh-plugin-token-war/main/docs/screenshots/04-vendor-event.png"
+  ],
+  "homepage": "https://github.com/JJJACKsong/dsh-plugin-token-war"
+}
