@@ -1,0 +1,14 @@
+{
+  "name": "dsh-go-live2d-call",
+  "version": "0.2.19",
+  "title": {
+    "zh": "DSH L2D桥接",
+    "en": "DSH L2D Bridge"
+  },
+  "summary": {
+    "zh": "在同一部手机上连接 DSH Go 和 DSH L2D，将对话和本机语音识别接入通话。",
+    "en": "Connects DSH Go and DSH L2D on the same phone for calls and on-device speech recognition."
+  },
+  "category": "communication",
+  "homepage": "https://github.com/Franka-official/DSH-L2D-Public"
+}
