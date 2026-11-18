@@ -296,7 +296,12 @@ export async function inspect(
     const pkg = JSON.parse(files.get('package.json')?.toString() ?? 'null');
     if (pkg?.name !== entry.name || pkg?.version !== entry.version) throw new Error('manifest-identity-mismatch');
     if (!osiLicense(pkg.license)) report.denials.push('license-not-osi');
-    if (typeof pkg.dsh?.bundle?.patch !== 'string' || !files.has(pkg.dsh.bundle.patch.replace(/^\.\//, '')))
+    const declaredPatch = pkg.dsh?.bundle?.patch;
+    const patchFiles = typeof declaredPatch === 'string' ? [declaredPatch] : Array.isArray(declaredPatch) ? declaredPatch : [];
+    if (
+      !patchFiles.length ||
+      !patchFiles.every((file) => typeof file === 'string' && file.length > 0 && files.has(file.replace(/^\.\//, '')))
+    )
       report.denials.push('not-dsh-bundle');
     report.engines = pkg.engines?.dsh ? { dsh: pkg.engines.dsh } : {};
     Object.assign(report, scan(files, pkg));

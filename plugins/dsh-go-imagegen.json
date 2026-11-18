@@ -1,0 +1,14 @@
+{
+  "name": "dsh-go-imagegen",
+  "version": "0.4.5",
+  "title": {
+    "zh": "AI 画图",
+    "en": "Image generation"
+  },
+  "summary": {
+    "zh": "在对话里直接出图：注册 generate_image 工具，并提供输入框「画师」入口与原生面板。内置火山方舟 Seedream、阿里通义千问/万相，也可接入任意 OpenAI 兼容的 /images/generations 网关、本地 SD/ComfyUI，并以免 key 的 Pollinations 兜底。支持文生图、参考图改图（URL、本地路径或 data URI）、一次生成多张候选且部分失败仍保留成功结果；图片先写入 outDir（默认为用户主目录下的 generated-images）再插入对话，默认关闭水印，并可逐个供应商探测、一键测通。",
+    "en": "Generate images inside the conversation: a generate_image tool, a composer action and native panels. Built in for Volcengine Ark Seedream and Alibaba Qwen/Wanx, plus any OpenAI-compatible /images/generations gateway or local SD/ComfyUI, with keyless Pollinations as fallback. Supports text-to-image, image-to-image from a URL, local path or data URI, several candidates per call with partial failures preserved, and watermark-free output by default. Images are written to outDir (defaulting to generated-images under the user home) before being attached, with per-provider probes and one-click connection tests."
+  },
+  "category": "media",
+  "screenshots": []
+}
