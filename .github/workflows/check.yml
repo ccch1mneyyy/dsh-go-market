@@ -95,10 +95,13 @@ jobs:
             if(pr.state!=='open'||pr.base.ref!=='main'||pr.base.repo.full_name!==context.repo.owner+'/'+context.repo.repo) throw new Error('Expected an open PR to main');
             if(pr.head.sha!==process.env.CHECKED_HEAD) throw new Error('PR changed; await its new checks');
             if(pr.draft) { core.info('Draft: waiting for ready_for_review'); return; }
-            const q=await github.graphql(`query($owner:String!,$repo:String!,$number:Int!){repository(owner:$owner,name:$repo){autoMergeAllowed pullRequest(number:$number){id baseRef{branchProtectionRule{requiresStatusChecks requiresStrictStatusChecks requiredStatusCheckContexts}}}}}`,{...context.repo,number:pr.number});
-            const r=q.repository, rule=r.pullRequest.baseRef?.branchProtectionRule;
-            // Refuse to bypass missing branch protection. GitHub waits for every required check.
-            if(!r.autoMergeAllowed || !rule?.requiresStatusChecks || !rule.requiresStrictStatusChecks || !rule.requiredStatusCheckContexts.includes('market/catalog')) throw new Error('Configure auto-merge and strict branch protection requiring market/catalog first');
+            // GITHUB_TOKEN 没有 Administration 权限，读取 baseRef.branchProtectionRule 会让整条
+            // GraphQL 查询报 "Resource not accessible by integration"，auto-merge 永远失败。
+            // 这里只校验仓库允许 auto-merge、PR 目标为 main、head 未变；main 的 strict 分支保护
+            // 与 market/catalog required check 仍由仓库设置强制执行，工作流无法验证它们是否被移除。
+            const q=await github.graphql(`query($owner:String!,$repo:String!,$number:Int!){repository(owner:$owner,name:$repo){autoMergeAllowed pullRequest(number:$number){id}}}`,{...context.repo,number:pr.number});
+            const r=q.repository;
+            if(!r.autoMergeAllowed) throw new Error('Enable auto-merge for this repository first');
             // Several independently checked upgrade PRs may race to merge. A strict
             // branch rule requires updating the remaining branches, then rechecking
             // their NEW head; never reuse the status from before the update.

@@ -1,0 +1,15 @@
+{
+  "name": "@zzchen/dsh-go-adb-link",
+  "version": "1.3.4",
+  "title": {
+    "zh": "ADB 自动连接",
+    "en": "ADB auto-link"
+  },
+  "summary": {
+    "zh": "安装前需在手机端开启经典 TCP ADB（Stellar/Shizuku TCP 或 adb tcpip），或对 Android 11+ 无线调试做一次配对；插件自动查找端口并保持连接。面板可固定 adbd 端口；AI 用 adb 会先说目的，只读查询可直接执行，系统级或写入操作必须经你在插件面板点「允许一次」放行，删数据这类红线永远拦截。",
+    "en": "Requires classic TCP ADB on the phone (Stellar/Shizuku TCP or adb tcpip), or one-time pairing for Android 11+ wireless debugging. Finds the port and keeps it connected; the panel can pin adbd to a fixed port. The AI explains its purpose first; read-only queries run directly, while system-level or write commands need your one-time approval in the panel. Data-destroying commands are always blocked."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/chen114514st/dsh-go-adb-link"
+}
