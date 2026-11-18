@@ -1,0 +1,15 @@
+{
+  "name": "dsh-modelscope-pool",
+  "version": "0.11.1",
+  "title": {
+    "en": "ModelScope key pool",
+    "zh": "魔搭 Key 池"
+  },
+  "summary": {
+    "en": "Pools many ModelScope API keys into one OpenAI-compatible gateway and silently rotates to the next key on rate limits, exhausted quota or missing permissions. The model never changes; the UI follows the system language and shows quota usage.",
+    "zh": "把多个魔搭 API Key 聚合成一个 OpenAI 兼容网关：遇限流、额度不足或无权限时自动无感换下一个 Key，模型始终不变。界面跟随系统语言，含额度与用量视图。"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/Yizutt/dsh-modelscope-pool"
+}
