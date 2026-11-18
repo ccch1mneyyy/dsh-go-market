@@ -1,0 +1,15 @@
+{
+  "name": "@taxueseek/argo-dsh",
+  "version": "2.11.2",
+  "title": {
+    "zh": "阿尔戈搜索",
+    "en": "Argo Search"
+  },
+  "summary": {
+    "zh": "Argo 统一搜索、网页抓取与深度证据核验插件，自带配置界面与 MCP 工具挂载",
+    "en": "Unified search, web scraping, and evidence verification plugin with built-in settings UI and MCP tools"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/taxueseek/argo"
+}
