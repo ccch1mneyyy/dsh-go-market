@@ -233,6 +233,17 @@ test('actual package manifest controls licensing and bundle identity; install sc
   assert.equal(report.status, 'passed');
   assert.equal(report.risk.level, 'high');
   assert(report.warnings.includes('install-scripts'));
+  // dsh-app-boot accepts one patch file or an ordered list; keep the market gate in sync.
+  const arrayPatch = await modifiedArchive((p) => {
+    p.dsh.bundle.patch = ['./cordis.patch.yml'];
+  });
+  assert(!(await inspect(arrayPatch.entry, arrayPatch.options)).denials.includes('not-dsh-bundle'));
+  for (const patch of [[], ['./cordis.patch.yml', './missing.patch.yml'], ['./cordis.patch.yml', 42]]) {
+    const bad = await modifiedArchive((p) => {
+      p.dsh.bundle.patch = patch;
+    });
+    assert((await inspect(bad.entry, bad.options)).denials.includes('not-dsh-bundle'), JSON.stringify(patch));
+  }
 });
 test('archive traversal, links and duplicate filenames are refused without extraction', async () => {
   const link = await modifiedArchive(async (_p, dir) => symlink('/etc/passwd', join(dir, 'package/secret')));
