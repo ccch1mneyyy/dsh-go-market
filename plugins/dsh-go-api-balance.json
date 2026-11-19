@@ -1,6 +1,6 @@
 {
   "name": "dsh-go-api-balance",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "title": {
     "zh": "API 余额",
     "en": "API balance"
