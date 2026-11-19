@@ -1,13 +1,13 @@
 {
   "name": "dsh-skill-apk-reverse",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "title": {
     "zh": "手机版逆向skill",
     "en": "APK Reverse Skill"
   },
   "summary": {
-    "zh": "手机端 Android APK 逆向研究技能包：解包、反编译、广告组件分析、补丁重签、真机验证",
-    "en": "Android APK reverse-engineering skill for phones: decode, decompile, analyze ad components, patch, re-sign and verify on device"
+    "zh": "手机端 Android APK 逆向研究技能包：解包、反编译、安全审计、补丁重签、真机验证；适配 DSH Go 原生入口，工具链按需下载",
+    "en": "Android APK reverse-engineering skill for phones: decode, decompile, security audit, patch, re-sign and verify on device; native DSH Go entry, on-demand toolchain"
   },
   "category": "other",
   "screenshots": [],
