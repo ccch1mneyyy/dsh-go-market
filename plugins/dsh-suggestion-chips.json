@@ -1,6 +1,6 @@
 {
   "name": "dsh-suggestion-chips",
-  "version": "0.2.5",
+  "version": "0.3.4",
   "title": {
     "zh": "回复建议按钮",
     "en": "Suggestion Chips"
