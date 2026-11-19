@@ -1,0 +1,12 @@
+{
+  "name": "local-mcp-manager",
+  "version": "0.5.4",
+  "title": {"zh": "MCP 管理器", "en": "MCP Manager"},
+  "summary": {
+    "zh": "为 dsh-go 原生界面适配 MCP 连接、工具、凭据与调用策略管理；不保证其他平台可用。",
+    "en": "Native MCP connection, tool, credential and approval management for dsh-go. Other platforms are not supported."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/Aouky7/dsh-go-mcp-manager"
+}
