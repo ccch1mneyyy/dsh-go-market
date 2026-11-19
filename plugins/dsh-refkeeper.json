@@ -1,6 +1,6 @@
 {
   "name": "dsh-refkeeper",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "title": {
     "zh": "引用管理器",
     "en": "Reference Keeper"
