@@ -1,6 +1,6 @@
 {
   "name": "dsh-go-usage-meter",
-  "version": "0.9.4",
+  "version": "0.10.4",
   "title": {
     "zh": "模型用量",
     "en": "Usage meter"
