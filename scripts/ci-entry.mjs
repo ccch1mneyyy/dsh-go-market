@@ -1,10 +1,12 @@
+import { companionSubmission } from './ci-companions.mjs';
 /** Read the one allowed submission from immutable Git objects, without checking out PR code. */
 const ENTRY_PATH = /^plugins\/(?:@[a-z0-9][a-z0-9._~-]*__)?[a-z0-9][a-z0-9._~-]*\.json$/;
 const SHA = /^[0-9a-f]{40}$/;
 const MAX_ENTRY_BYTES = 16384;
 const regular = (entry) => entry?.type === 'blob' && ['100644', '100755'].includes(entry.mode);
 
-export async function submission(github, { repository, headRepository, base, head }) {
+export async function submission(github, options) {
+  const { repository, headRepository, base, head } = options;
   if (!SHA.test(base) || !SHA.test(head)) throw new Error('Expected immutable base/head SHAs');
   // pulls.listFiles follows the live PR ref. Its blobs could come from another revision even
   // after checking the PR head, so compare only the captured commit IDs instead.
@@ -16,6 +18,8 @@ export async function submission(github, { repository, headRepository, base, hea
   });
   // GitHub returns changed files on the first page (at most 300). More than one is ineligible.
   const files = comparison.files;
+  if (files?.some(f => /^(pets|adapters)\//.test(f.filename)))
+    return companionSubmission(github, options, files);
   if (
     !Array.isArray(files) || files.length !== 1 ||
     !ENTRY_PATH.test(files[0].filename) || !['added', 'modified'].includes(files[0].status)

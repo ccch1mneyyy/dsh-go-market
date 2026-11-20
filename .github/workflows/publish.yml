@@ -24,6 +24,10 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci --ignore-scripts
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check -r requirements-companions.txt
       - run: npm test
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3

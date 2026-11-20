@@ -1,0 +1,39 @@
+name: 宠物 / 适配表举报
+description: 报告内容、授权、损坏文件或适配错误
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: 请只提交可公开的材料。个人证件、私人合同或敏感证明请通过维护者公布的私密渠道提供，勿贴到公开 Issue。
+  - type: input
+    id: identity
+    attributes:
+      label: 宠物 id 或完整 moc SHA-256
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 精确版本及制品 SHA-256
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 问题类别
+      options:
+        - 版权 / 再分发权限
+        - 不适当内容
+        - 损坏 / 摘要或尺寸不符
+        - 适配表语义错误
+        - 身份归属冲突
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 问题描述及可公开证据链接
+      description: 请说明复现步骤、来源、期望处理；不要在这里附未授权模型或敏感个人资料。
+    validations:
+      required: true
