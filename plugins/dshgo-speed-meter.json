@@ -1,0 +1,15 @@
+{
+  "name": "dshgo-speed-meter",
+  "version": "0.1.0",
+  "title": {
+    "zh": "dshgo-speed-meter",
+    "en": "dshgo-speed-meter"
+  },
+  "summary": {
+    "zh": "自包含的模型输出速度计",
+    "en": "Self-contained output speed meter"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/ccch1mneyyy/dsh-go-market"
+}
