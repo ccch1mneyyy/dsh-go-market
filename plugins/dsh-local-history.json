@@ -1,6 +1,6 @@
 {
   "name": "dsh-local-history",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "title": {
     "zh": "DeepSeek 旧聊天导入",
     "en": "DeepSeek Chat History Import"
