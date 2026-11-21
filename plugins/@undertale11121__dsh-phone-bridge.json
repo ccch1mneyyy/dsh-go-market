@@ -1,0 +1,14 @@
+{
+  "name": "@undertale11121/dsh-phone-bridge",
+  "version": "0.6.15",
+  "title": {
+    "zh": "手机互联",
+    "en": "Phone bridge"
+  },
+  "summary": {
+    "zh": "把 DSH 电脑端和 dsh-go 手机连成一条双向通道：桌面能看手机屏幕、点按、开应用、跑 shell、传文件，两边模型也能把任务交给对方。",
+    "en": "Connect a DSH desktop host with a dsh-go phone in both directions: the desktop can drive the phone (screen, tap, open apps, shell, files), and either model can hand tasks to the other."
+  },
+  "category": "tools",
+  "screenshots": []
+}
