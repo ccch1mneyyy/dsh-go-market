@@ -1,0 +1,18 @@
+{
+  "name": "@wssdll/dsh-chat-preset",
+  "version": "1.2.4",
+  "title": {
+    "zh": "聊天模式",
+    "en": "Chat Mode"
+  },
+  "summary": {
+    "zh": "DSH 的聊天专用预设。工具从几十个压到三个，工具 schema 从约 9458 tok 降到约 376 tok，保留联网搜索、网页读取和附件读取，中文思维链，尽量还原网页版聊天体验。",
+    "en": "A chat-only preset for DSH. Cuts tools from dozens to three and the tool schema from about 9458 to 376 tokens, keeping web search, page fetch and attachment reading, with a Chinese reasoning chain and a chat-like feel."
+  },
+  "category": "productivity",
+  "screenshots": [
+    "https://raw.githubusercontent.com/wssdll/dsh-chat-preset/main/screenshot-1.png",
+    "https://raw.githubusercontent.com/wssdll/dsh-chat-preset/main/screenshot-2.png"
+  ],
+  "homepage": "https://github.com/wssdll/dsh-chat-preset"
+}
