@@ -1,0 +1,15 @@
+{
+  "name": "dsh-root-bridge",
+  "version": "0.1.1",
+  "title": {
+    "zh": "真 Root 命令桥",
+    "en": "Real root bridge"
+  },
+  "summary": {
+    "zh": "在 Android 手机的系统侧以真正的 root 执行命令，绕开 proot 容器的假 root；需要配合同名的 KernelSU 模块使用。",
+    "en": "Run commands as real root on the Android side, outside the proot container. Requires the companion KernelSU module."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/4344734/dsh-root-bridge"
+}
