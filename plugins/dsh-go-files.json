@@ -1,0 +1,15 @@
+{
+  "name": "dsh-go-files",
+  "version": "0.2.5",
+  "title": {
+    "zh": "工作区",
+    "en": "Workspace"
+  },
+  "summary": {
+    "zh": "在侧栏浏览主机工作区：文本 / 图片 / 视频预览、手机上传、移动和删除，全部限制在工作区内",
+    "en": "Browse the host workspace from the sidebar: preview text, images and videos, upload from the phone, move and delete files, all confined to the workspace"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/boyexquisite/dsh-go-files"
+}
