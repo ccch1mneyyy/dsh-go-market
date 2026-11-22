@@ -1,0 +1,12 @@
+{
+  "name": "dsh-go-wuwiii-link",
+  "version": "0.1.0",
+  "title": { "zh": "呜异屋连接", "en": "Wuwiii link" },
+  "summary": {
+    "zh": "把本机引擎的登录地址复制出来，到呜异屋手机端粘贴配对。",
+    "en": "Copy the local engine pairing address and paste it into Wuwiii on the same phone."
+  },
+  "category": "communication",
+  "screenshots": [],
+  "homepage": "https://github.com/flowerzero2005/dsh-go-wuwiii-link"
+}
