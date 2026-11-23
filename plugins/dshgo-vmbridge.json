@@ -1,0 +1,12 @@
+{
+  "name": "dshgo-vmbridge",
+  "version": "1.0.0",
+  "title": {"zh": "虚拟机桥", "en": "VM Bridge"},
+  "summary": {
+    "zh": "通过 adb 驱动 AndVM 里的 Android 虚拟机，给 AI 提供读屏、点击输入、root shell、装 APK 与截图工具。",
+    "en": "Drives an Android VM running in AndVM over adb, exposing screen reading, tap and input, root shell, APK install and screenshot tools to the AI."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/xqe-bkflda/dshgo-vmbridge"
+}
