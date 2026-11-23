@@ -1,0 +1,12 @@
+{
+  "name": "dshgo-dir-share",
+  "version": "1.0.0",
+  "title": {"zh": "目录共享", "en": "Dir Share"},
+  "summary": {
+    "zh": "内置 FTP 与 WebDAV 服务端，一键把 DSH Go 的工作区目录转发出去，MT 管理器等客户端可直接挂载读写。",
+    "en": "Built-in FTP and WebDAV servers that expose the DSH Go workspace folder so a phone file manager such as MT Manager can mount it read-write."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/xqe-bkflda/dshgo-dir-share"
+}
