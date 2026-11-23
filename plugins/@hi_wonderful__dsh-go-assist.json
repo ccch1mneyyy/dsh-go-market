@@ -10,6 +10,5 @@
     "en": "Hosts offline ASR and a local small-model router inside the engine: voice tasks are answered locally first, then handed to DSH"
   },
   "category": "productivity",
-  "screenshots": [],
-  "homepage": "https://github.com/cj5pvj4vjt-ux/dsh-go-assist"
+  "screenshots": []
 }
