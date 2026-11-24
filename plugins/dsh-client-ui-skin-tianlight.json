@@ -1,0 +1,20 @@
+{
+  "name": "dsh-client-ui-skin-tianlight",
+  "version": "2.3.0",
+  "title": {
+    "zh": "天光",
+    "en": "Tianlight"
+  },
+  "summary": {
+    "zh": "DeepSeek Harness 网页界面的「天光」皮肤：新海诚式日光观感，电影感开场与循环视频壁纸，支持上传、轮播、URL 与 ShaderToy GLSL 的壁纸库，可选 WebWallGL 场景壁纸、液态玻璃，以及可拖拽的薄荷猫桌宠（严格权限的 AI 对话、本地对话历史与可选自主思考）。Alt+W 打开壁纸面板。目前面向桌面端网页界面，未适配 DSH Go 原生界面。",
+    "en": "Tianlight skin for the DSH web GUI: a Shinkai-style daylight look with a cinematic opening film and a looping video wallpaper, a wallpaper library with upload, rotation, URL and ShaderToy GLSL sources, optional WebWallGL scene wallpapers, liquid glass surfaces, and a draggable Mint chibi-cat companion with permission-gated AI chat, local chat history and an optional autonomous-thinking loop. Alt+W opens the wallpaper panel. Currently targeted at the desktop web GUI; not adapted to the DSH Go native interface."
+  },
+  "category": "other",
+  "screenshots": [
+    "https://raw.githubusercontent.com/MilkySnowWay123/dsh-client-ui-skin-tianlight/main/screenshots/01-default-look.png",
+    "https://raw.githubusercontent.com/MilkySnowWay123/dsh-client-ui-skin-tianlight/main/screenshots/02-wallpaper-panel.png",
+    "https://raw.githubusercontent.com/MilkySnowWay123/dsh-client-ui-skin-tianlight/main/screenshots/03-role-hub.png",
+    "https://raw.githubusercontent.com/MilkySnowWay123/dsh-client-ui-skin-tianlight/main/screenshots/04-version-fingerprint.png"
+  ],
+  "homepage": "https://github.com/MilkySnowWay123/dsh-client-ui-skin-tianlight"
+}
