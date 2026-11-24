@@ -1,13 +1,13 @@
 {
   "name": "dsh-ddj-go",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "title": {
     "zh": "叮咚鸡 Go",
     "en": "DingDongJi Go"
   },
   "summary": {
-    "zh": "DSH Go 移动端叮咚鸡工作台：项目仪表盘、科学问题/审计提醒，以及手稿、图稿、手稿文书的浏览、下载与 WPS 分享。",
-    "en": "DingDongJi research workbench for DSH Go: mobile project dashboard, science-question/audit alerts, and browsing/downloading manuscripts, figures and manuscript documents with WPS sharing."
+    "zh": "DSH Go 移动端叮咚鸡工作台：原生仪表盘/文件面板与网页版手稿、图稿浏览、下载和 WPS 分享。",
+    "en": "DingDongJi research workbench for DSH Go: native dashboard/files panels plus web-view manuscript and figure browsing, download and WPS sharing."
   },
   "category": "productivity",
   "screenshots": [
