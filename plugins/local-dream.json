@@ -6,10 +6,10 @@
     "en": "Memory"
   },
   "summary": {
-    "zh": "把值得留下的内容整理成记忆块，之后的对话自动带上；聊完在后台整理",
-    "en": "Long-term memory blocks injected into every conversation, consolidated in the background"
+    "en": "Long-term memory blocks injected into every conversation, consolidated in the background",
+    "zh": "把值得留下的内容整理成记忆块，之后的对话自动带上；聊完在后台整理"
   },
-  "category": "productivity",
   "screenshots": [],
+  "category": "productivity",
   "homepage": "https://github.com/thousandsson/local-dream"
 }
