@@ -10,6 +10,9 @@
     "en": "Sync chats, DSH-Shared files and enabled plugins between Windows DeepSeek Harness and Android DSH Go over the same Wi-Fi, catching up after reconnects"
   },
   "category": "communication",
-  "screenshots": [],
+  "screenshots": [
+    "https://raw.githubusercontent.com/yuguanghang516/dsh-peer-sync/main/docs/market/01-conversations.png",
+    "https://raw.githubusercontent.com/yuguanghang516/dsh-peer-sync/main/docs/market/02-overview.jpg"
+  ],
   "homepage": "https://github.com/yuguanghang516/dsh-peer-sync"
 }
