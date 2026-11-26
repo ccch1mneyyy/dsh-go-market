@@ -1,0 +1,15 @@
+{
+  "name": "dsh-ipa-build",
+  "version": "1.3.8",
+  "title": {
+    "zh": "产出 IPA",
+    "en": "Build IPA"
+  },
+  "summary": {
+    "zh": "把 iOS 源码编成 .ipa：包内自带 iPhoneOS SDK 与 zsign，可打包、改 bundle id 多开、重签，Windows / Linux / macOS 都能用",
+    "en": "Build .ipa from iOS source: bundles the iPhoneOS SDK and zsign in the package, supports packing, bundle-id retagging and resigning on Windows, Linux and macOS"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/3783485207-cmd/dsh-ipa-build"
+}
