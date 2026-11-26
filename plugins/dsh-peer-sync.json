@@ -1,15 +1,18 @@
 {
   "name": "dsh-peer-sync",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "title": {
     "zh": "局域双端同步",
     "en": "LAN peer sync"
   },
   "summary": {
-    "zh": "同一 Wi-Fi 下让 Windows 的 DeepSeek Harness 和安卓 DSH Go 互换聊天记录、DSH-Shared 文件与已启用插件，断线后重连自动补传",
-    "en": "Sync chats, DSH-Shared files and enabled plugins between Windows DeepSeek Harness and Android DSH Go over the same Wi-Fi, catching up after reconnects"
+    "zh": "同一 Wi-Fi 下让 Windows 的 DeepSeek Harness 和安卓 DSH Go 互换聊天记录、DSH-Shared 文件与已启用插件，断线后重连自动补传；DSH Go 输入框上方可直接看到同步状态",
+    "en": "Sync chats, DSH-Shared files and enabled plugins between Windows DeepSeek Harness and Android DSH Go over the same Wi-Fi, catching up after reconnects; the sync status sits above the DSH Go composer"
   },
   "category": "communication",
-  "screenshots": [],
+  "screenshots": [
+    "https://raw.githubusercontent.com/yuguanghang516/dsh-peer-sync/main/docs/market/01-conversations.png",
+    "https://raw.githubusercontent.com/yuguanghang516/dsh-peer-sync/main/docs/market/02-overview.jpg"
+  ],
   "homepage": "https://github.com/yuguanghang516/dsh-peer-sync"
 }
