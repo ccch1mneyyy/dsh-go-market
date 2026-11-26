@@ -1,0 +1,17 @@
+{
+  "name": "dsh-xiaomi-tts",
+  "version": "5.6.1",
+  "title": {
+    "en": "Voice Studio",
+    "zh": "音色工坊"
+  },
+  "summary": {
+    "en": "Multi-engine TTS & ASR plugin for DSH supporting Xiaomi MiMo, Doubao, Breeze, DeepSeek, local MOSS, streaming read-aloud, live subtitles & orb, multi-role audio drama studio, and ecosystem integrations.",
+    "zh": "DSH 多引擎语音朗读与录音棚插件：支持小米 MiMo、豆包、Breeze、DeepSeek 与本地 MOSS，提供流式朗读、实时字幕响应球、/director 多角色有声剧合成及生态联动。"
+  },
+  "category": "media",
+  "screenshots": [
+    "https://raw.githubusercontent.com/ppy-web/dsh-plugin-xiaomi-mimo-tts/main/assets/social.webp"
+  ],
+  "homepage": "https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts"
+}
