@@ -1,6 +1,6 @@
 {
   "name": "dsh-ipa-build",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "title": {
     "zh": "产出 IPA",
     "en": "Build IPA"
