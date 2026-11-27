@@ -1,0 +1,18 @@
+{
+  "name": "dsh-usage-dock",
+  "version": "1.0.0",
+  "title": {
+    "zh": "余额与额度",
+    "en": "Usage & balances"
+  },
+  "summary": {
+    "zh": "在输入框上方与 DSH Go 原生面板查看 OpenCode Go、DeepSeek、OpenAI Codex 和小米 MiMo 的余额与额度；Codex 支持多账户查看与切换，也可添加自定义余额渠道。",
+    "en": "Balances and quotas for OpenCode Go, DeepSeek, OpenAI Codex and Xiaomi MiMo in the composer strip and native DSH Go panels, with multi-account Codex view/switch and custom balance channels."
+  },
+  "category": "productivity",
+  "screenshots": [
+    "https://raw.githubusercontent.com/Slacom/dsh-usage-dock/main/preview.png",
+    "https://raw.githubusercontent.com/Slacom/dsh-usage-dock/main/docs/assets/dsh-go.jpg"
+  ],
+  "homepage": "https://github.com/Slacom/dsh-usage-dock"
+}
