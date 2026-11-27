@@ -1,0 +1,15 @@
+{
+  "name": "dsh-go-shusheng-edu",
+  "version": "1.0.0",
+  "title": {
+    "zh": "书生额度·账号池",
+    "en": "Shusheng Edu Pool"
+  },
+  "summary": {
+    "zh": "书生·端砚多账号额度管理：查余额、自动建 API Key、额度不足自动切号",
+    "en": "Multi-account balance pool for Intern InkStone with automatic API key creation and switching"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/xjscum/dsh-go-shusheng-edu"
+}
