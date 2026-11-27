@@ -142,10 +142,11 @@ const entryScript = entryStep.split('          script: |\n')[1].split('\n').map(
 const AsyncFunction = Object.getPrototypeOf(async function () {}).constructor;
 async function runStep(f, { head = HEAD, baseFile = null } = {}) {
   const writes = [], statuses = [], outputs = {};
-  f.github.rest.pulls.get = async () => ({ data: { head: { sha: head, repo: { owner: { login: 'contributor' }, name: 'fork' } } } });
+  f.github.rest.pulls.get = async () => ({ data: { head: { sha: head, repo: { owner: { login: 'contributor' }, name: 'fork' } }, user:{login:'contributor'} } });
   f.github.rest.repos.createCommitStatus = async (status) => statuses.push(status);
   const fs = {
-    lstat: async () => { if (baseFile) return baseFile; throw Object.assign(new Error('missing'), { code: 'ENOENT' }); },
+    mkdir: async () => {},
+    lstat: async (path) => { if (baseFile && path === PATH) return baseFile; throw Object.assign(new Error('missing'), { code: 'ENOENT' }); },
     writeFile: async (path, bytes) => writes.push({ path, text: bytes.toString() }),
   };
   await new AsyncFunction('github', 'context', 'core', 'require', 'process', entryScript)(
@@ -160,13 +161,13 @@ test('workflow passes the captured base/head and writes only the audited regular
   assert.match(entryStep, /CHECKED_HEAD: \$\{\{ steps\.resolve\.outputs\.head \}\}/);
   const f = fixture();
   const result = await runStep(f);
-  assert.deepEqual(result.writes, [{ path: PATH, text: JSON_TEXT }]);
+  assert.deepEqual(result.writes, [{ path: PATH, text: JSON_TEXT }, {path:'reports/submission.json',text:'null'}]);
   assert.equal(result.statuses[0].sha, HEAD);
-  assert.equal(result.outputs.eligible, 'true');
+  assert.equal(result.outputs.eligible, undefined); // Publication eligibility is decided after validation.
 });
 test('workflow refuses changed heads and non-regular base or head files before writing', async () => {
   await assert.rejects(runStep(fixture(), { head: OTHER }), /PR changed/);
-  await assert.rejects(runStep(fixture(), { baseFile: { isFile: () => false } }), /regular file in base/);
+  await assert.rejects(runStep(fixture(), { baseFile: { isFile: () => false } }), /regular file/);
   const f = fixture();
   f.data.directory.tree[0].mode = '120000';
   await assert.rejects(runStep(f), /regular JSON file at head/);

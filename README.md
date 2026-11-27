@@ -1,8 +1,10 @@
-# DSH Go 插件市场
+# DSH Go 插件与陪伴市场
 
 这是待拆出到公开仓库 `ccch1mneyyy/dsh-go-market` 的完整目录。安装入口是 DSH Go 的插件市场；本仓库只维护锁定版本的目录与静态检查结果，不托管或执行插件代码。
 
 发布产物：`index.json` 使用 DSH 格式 1，`dsh-go.json` 使用 DSH Go sidecar schema 1，`audit.json` 保留本次结构化扫描证据。Worker 对外提供 `https://go.dshtui.com/market/`，分享页为 `https://go.dshtui.com/p/<encodeURIComponent(包名)>`。
+
+宠物包与 Live2D 适配表的投稿、审核、下架、规范化和 App/Worker 接口见 [COMPANIONS.md](COMPANIONS.md)。它们使用独立的 `pets.json`、`adapters.json` 与内容寻址制品，发布须维护者批准 schema 2 的完整 release 摘要，绑定有效元数据、owner/rights、规范化制品及预览。旧单个制品 SHA 不再批准。宠物/适配表目录必须从 Worker 读取；dl 默认只作不可变制品下载，若保留 dl 目录，其 origin 必须是同一 Worker。
 
 ## 提交插件
 
@@ -27,13 +29,14 @@
 
 ## 本地检查与生成
 
-需要 Node.js 22 或更新版本。以下命令在本目录运行：
+需要 Node.js 22 或更新版本、Python 3.12。以下命令在本目录运行：
 
 ```sh
 npm ci --ignore-scripts
+python -m pip install -r requirements-companions.txt
 npm test                      # 离线测试（含原始 npm tarball 夹具）
 npm run check                 # 在线实扫，结构化结果写 reports/ 并输出 JSON
-npm run build                 # 重新在线实扫，成功后生成 dist/ 下三个文件
+npm run build                 # 重新在线实扫，成功后生成插件目录、宠物/适配表目录与已批准制品
 npm run watch                 # 查 dist-tags.latest 并检查新版，输出 reports/updates.json
 ```
 
@@ -72,6 +75,14 @@ npm run watch                 # 查 dist-tags.latest 并检查新版，输出 re
 - 在 Pages 设置选择 GitHub Actions 发布。`publish.yml` 只给部署作业 `pages:write` 和 `id-token:write`；无需 Cloudflare 密钥。
 - 单条插件 PR 用 `pull_request_target` 跑 **可信 base** 的代码，固定 base/head SHA 比较变更，再沿该 head 的 commit → tree → blob 读取唯一 JSON，验证它是普通文件；拒绝符号链接和子模块，绝不 checkout / 执行 PR 脚本。成功状态写在实际 PR head SHA 上；自动合并再次核对 SHA。其他维护变更不走自动合并，需要维护者审查与单独验证。
 - 每日 `watch.yml` 为通过扫描的新版创建只改一个条目的 PR，并显式调用 `workflow_dispatch` 复用完整检查。GitHub 的 GITHUB_TOKEN 不会递归触发普通 PR/push 事件；发布工作流另有每十分钟定时补偿（GitHub 排程可能延迟），手动 dispatch 也可立即发布。相关行为见 [GitHub 官方事件文档](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)。
-- Worker 默认上游是 `https://ccch1mneyyy.github.io/dsh-go-market/`；可用 `MARKET_SOURCE_URL` 改为另一个 HTTPS 发布根地址。复用已有 QUOTA KV 存整组成功副本，不设过期，十分钟刷新；上游失败继续返回旧副本并带 `X-Market-Stale: true`，未有成功副本时返回 503。缓存不等于永久在线保证，KV 写入失败时仅当前 isolate 内存可保留新副本。
+- 以下仅描述既有插件市场：Worker 默认上游是 `https://ccch1mneyyy.github.io/dsh-go-market/`；可用 `MARKET_SOURCE_URL` 改为另一个 HTTPS 发布根地址。复用已有 QUOTA KV 存整组成功副本，不设过期，十分钟刷新；上游失败继续返回旧副本并带 `X-Market-Stale: true`，未有成功副本时返回 503。缓存不等于永久在线保证，KV 写入失败时仅当前 isolate 内存可保留新副本。
 
 首批候选及不能上架的实际原因见 `candidates/README.md`。媒体包发布后再移入 plugins，不占用空包、不生成虚假的审核数据。
+
+## C903 宠物分区部署边界
+
+这份源码没有部署当前 go/dl 域名。两份公开目录路径保持不变，由 Worker 将单一 `market/_publication-v1/{pets|adapters}.json` 中的 `catalogText` 投影出来；内部完整历史和目录一起 CAS。没有另一份裸桶目录副本。
+
+升级前停止旧宠物 publisher 并确定所有在途/unknown PUT 的结果；负读旧 key 不能排除它晚提交。旧裸目录没有全历史时 fail closed，必须可信重建完整历史或明确新 authority/namespace 与客户端迁移，不能自动从当前版本补 ledger。
+
+源站失败但已提交 R2 健康时，仍返回 stale=false 的已提交目录；R2 读取/校验失败，warm reader 才以 stale=true 浏览缓存，下载和指纹查询 503。HTTP max-age=300 不保证上游新鲜度。adapter 缓存复用、当前目录沿用及读取授权均核完整有界 JSON、实际 size/SHA 与当前 profile；index 浏览本身不代替这一门或 App probe。完整迁移、批准记录、容量和 C700 旧入口替代条款见 [COMPANIONS.md](COMPANIONS.md) §§3–5。
