@@ -1,0 +1,15 @@
+{
+  "name": "dsh-go-connect-mika",
+  "version": "1.5.0",
+  "title": {
+    "zh": "局域网模型共享",
+    "en": "LAN model sharing"
+  },
+  "summary": {
+    "zh": "把 dsh-go 宿主已接好的模型，以 OpenAI 兼容地址共享给局域网内的任意客户端——Mika、平板、电脑都行：模型名换成中文友好名，可逐家供应商、逐个模型控制对外可见范围。代理跑在引擎进程内，端口被占用会自动顺延，宿主网关端口启动时自动探测。平板或电脑用面板一键生成的设备令牌接入，库里只存哈希、可单独撤销、失败限速；本机才认网关 key。外部调用照常计入宿主用量账本，费用与 token 在自己这边看得见。另含直连页：连上 Mika 的 MCP 后，mika_ask / mika_task / mika_phone 三个工具直接可用，任务不用截屏点屏。",
+    "en": "Share the models your dsh-go host already has with any client on the LAN — Mika, a tablet, a laptop — through one OpenAI-compatible address, with friendly Chinese model names and per-provider, per-model visibility control. The proxy runs inside the engine process: it moves to the next free port when taken and auto-detects the host gateway port on start-up. Tablets and laptops connect with a one-tap device token (only its hash is stored, revocable per device, failed attempts rate limited); only this device is accepted with the gateway key. Traffic from outside still lands in the host's usage ledger, so cost and tokens stay visible on your side. A Direct tab also connects to Mika's MCP service, making the mika_ask / mika_task / mika_phone tools available to the agent without screen-driving."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/YOUNG-FELIX/dsh-go-connect-mika"
+}
