@@ -1,0 +1,15 @@
+{
+  "name": "dsh-skill-apk-reverse",
+  "version": "0.8.0",
+  "title": {
+    "zh": "手机版逆向skill",
+    "en": "APK Reverse Skill"
+  },
+  "summary": {
+    "zh": "手机端 Android APK 逆向研究技能包：解包、反编译、广告组件分析、补丁重签、真机验证",
+    "en": "Android APK reverse-engineering skill for phones: decode, decompile, analyze ad components, patch, re-sign and verify on device"
+  },
+  "category": "other",
+  "screenshots": [],
+  "homepage": "https://github.com/xiaotianya14/apk-reverse-skill"
+}
