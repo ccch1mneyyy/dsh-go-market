@@ -10,7 +10,9 @@
     "en": "Multi-account balance pool for Intern InkStone with automatic API key creation and switching"
   },
   "category": "tools",
-  "screenshots": [],
+  "screenshots": [
+    "https://raw.githubusercontent.com/xjscum/dsh-go-shusheng-edu/main/docs/img/panel.jpg",
+    "https://raw.githubusercontent.com/xjscum/dsh-go-shusheng-edu/main/docs/img/strip.jpg"
+  ],
   "homepage": "https://github.com/xjscum/dsh-go-shusheng-edu"
 }
-
