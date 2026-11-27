@@ -1,0 +1,15 @@
+{
+  "name": "dsh-chatdemo-preset",
+  "version": "0.1.1",
+  "title": {
+    "zh": "ChatDemo 1:1",
+    "en": "ChatDemo 1:1"
+  },
+  "summary": {
+    "zh": "在 DSH 里按 DeepSeek 官方开源 chat-demo 的请求形状聊天：一句话人设、服务端搜索与引用，并带预设与模型自动切换。",
+    "en": "Chat in DSH with the request shape of DeepSeek's open-source chat-demo: one-line system prompt, server-side search with citations, plus a preset and automatic model switching."
+  },
+  "category": "other",
+  "screenshots": [],
+  "homepage": "https://github.com/nmgmeng/dsh-chatdemo"
+}
