@@ -1,7 +1,10 @@
 {
   "name": "dsh-go-magpie",
-  "version": "1.3.7",
-  "title": { "zh": "Magpie 网关", "en": "Magpie gateway" },
+  "version": "1.4.0",
+  "title": {
+    "zh": "Magpie 网关",
+    "en": "Magpie gateway"
+  },
   "summary": {
     "zh": "在 DSH Go 内置的 Ubuntu 环境里安装 magpie，默认起网关 + 网页版；面板可看状态、切换启动方式、配置端口与安装代理，安装与运行状态都进日志。",
     "en": "Installs magpie inside DSH Go's built-in Ubuntu environment and runs the gateway plus web console by default; the panel shows status, start mode, ports, install proxy, live install logs and a status check."
