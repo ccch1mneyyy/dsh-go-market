@@ -1,0 +1,15 @@
+{
+  "name": "dsh-science-plugin",
+  "version": "0.14.3",
+  "title": {
+    "zh": "科研工作台",
+    "en": "DSH Science Workbench"
+  },
+  "summary": {
+    "zh": "在 DSH Web 的项目面板管理研究问题、目标结果和支持证据，并分派科研任务。界面仅支持 Web。",
+    "en": "Organizes research questions, target results, evidence and specialist-agent tasks in a project dashboard available only in DSH Web."
+  },
+  "category": "productivity",
+  "screenshots": [],
+  "homepage": "https://github.com/SPYfighting/dsh-science-plugin"
+}
