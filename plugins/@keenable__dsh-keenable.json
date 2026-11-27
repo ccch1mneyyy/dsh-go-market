@@ -1,0 +1,15 @@
+{
+  "name": "@keenable/dsh-keenable",
+  "version": "0.1.2",
+  "title": {
+    "zh": "Keenable 联网搜索",
+    "en": "Keenable"
+  },
+  "summary": {
+    "zh": "让内置的 web_search 联网搜索和 web_fetch 网页抓取走 Keenable，无需 API 密钥，本地模型也能用；可选填写密钥以提高调用上限。",
+    "en": "Keenable web search and page fetch for DeepSeek Harness: the built-in web_search and web_fetch tools, with no API key needed"
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/keenableai/dsh-keenable"
+}
