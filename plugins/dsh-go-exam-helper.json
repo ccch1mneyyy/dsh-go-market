@@ -1,13 +1,13 @@
 {
   "name": "dsh-go-exam-helper",
-  "version": "1.7.5",
+  "version": "1.7.13",
   "title": {
-    "zh": "答题助手",
-    "en": "Exam helper"
+    "zh": "答题助手 · 考试刷题",
+    "en": "Exam helper — quiz & exam"
   },
   "summary": {
-    "zh": "同一个包，同时支持 DSH Go 手机 App（原生界面）和 DSH 网页端：盯住答题页面，把每道题的答案弹成顶部通知，优先命中本地题库、没有就调模型。网页端可直接选本地文件导入题库（手机选手机文件，电脑选电脑文件）。",
-    "en": "One package for both DSH Go (native phone app) and the DSH Web UI: watches the quiz page and pops each answer as a heads-up notification — local question bank first, model fallback. In the Web UI you can import a question bank by picking a local file."
+    "zh": "答题助手，适用于考试、刷题、题库练习、单选与测验：盯住答题页面，把每道题的答案弹成顶部通知——先查本地题库（可导入 csv/xlsx/json/tsv，命中最快最准），没有就调模型。手机端（DSH Go 原生界面）与网页端都能用，两端都能导入题库。",
+    "en": "Exam / quiz helper: watches the question page and pops each answer as a heads-up notification — local question bank first (import CSV, XLSX, JSON or TSV), model fallback. Works in the DSH Go phone app and in the DSH Web UI, and both can import a question bank."
   },
   "category": "tools",
   "screenshots": [],
