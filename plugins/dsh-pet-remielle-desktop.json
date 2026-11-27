@@ -1,0 +1,17 @@
+{
+  "name": "dsh-pet-remielle-desktop",
+  "version": "1.1.1",
+  "title": {
+    "zh": "蕾米埃尔桌面桌宠",
+    "en": "Remielle Desktop Pet"
+  },
+  "summary": {
+    "zh": "常驻 Windows 桌面的透明桌宠，可以直接聊天、发图，还能把活派给 DSH 智能体。",
+    "en": "An always-on-top desktop companion that chats, accepts images and dispatches work to DSH agents."
+  },
+  "category": "other",
+  "screenshots": [
+    "https://raw.githubusercontent.com/Cyrus0719/dsh-pet-remielle/main/docs/chat.png"
+  ],
+  "homepage": "https://github.com/Cyrus0719/dsh-pet-remielle"
+}
