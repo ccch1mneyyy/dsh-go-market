@@ -1,6 +1,6 @@
 {
   "name": "dsh-fast",
-  "version": "0.2.32",
+  "version": "0.2.33",
   "title": {
     "zh": "性能诊断",
     "en": "Performance diagnostics"
