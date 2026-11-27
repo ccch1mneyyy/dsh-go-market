@@ -1,6 +1,6 @@
 {
   "name": "dsh-go-browse-use",
-  "version": "1.7.2",
+  "version": "1.10.0",
   "title": {
     "zh": "浏览器桥接",
     "en": "Browser bridge"
