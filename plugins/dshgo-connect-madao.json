@@ -1,0 +1,15 @@
+{
+  "name": "dshgo-connect-madao",
+  "version": "0.1.1",
+  "title": {
+    "zh": "码道连接",
+    "en": "connect-madao"
+  },
+  "summary": {
+    "zh": "把华为云码道（CodeArts Agent）的模型接入 dsh-go，带原生面板：额度自动刷新、每日签到、按模型启用/停用。",
+    "en": "Use Huawei Cloud CodeArts Agent models in dsh-go with a native panel: live quota, daily check-in and per-model switches."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/wsdzwx2001/dshgo-connect-madao"
+}
