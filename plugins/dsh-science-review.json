@@ -1,0 +1,15 @@
+{
+  "name": "dsh-science-review",
+  "version": "0.3.1",
+  "title": {
+    "zh": "回答审查",
+    "en": "DSH Science Review"
+  },
+  "summary": {
+    "zh": "对照用户要求、工具记录和交付文件审查回答。审查界面仅在 DSH Web 中提供，问题和证据显示在原回答下方。",
+    "en": "Checks answers against instructions, tool results and delivered files. The review interface is available only in DSH Web and shows findings beneath each reviewed answer."
+  },
+  "category": "productivity",
+  "screenshots": [],
+  "homepage": "https://github.com/SPYfighting/dsh-science-review"
+}

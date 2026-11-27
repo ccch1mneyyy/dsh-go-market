@@ -1,0 +1,15 @@
+{
+  "name": "dsh-magpie-hub",
+  "version": "0.2.8",
+  "title": {
+    "zh": "Magpie 供应商中枢",
+    "en": "Magpie Hub"
+  },
+  "summary": {
+    "zh": "在 DSH 进程内直接运行 magpie 的供应商插件：继承已装的插件与已登录账号，把每个供应商注册成一条模型路由。桌面用 magpie 原版界面（已跟到上游 v0.1.4916，含模型、路由组、观测等页面），手机是四个原生页签——平台卡片带额度窗口与每日签到、用量统计（时间范围是原生下拉）、插件商店一键安装、账号备份可以在电脑和手机之间搬。输入框上方还有额度条与每回合消耗脚注。",
+    "en": "Runs magpie's vendor-plugin ecosystem inside DSH: inherits installed plugins and signed-in accounts, and registers every provider as a model route. Desktop ships the original magpie UI, now tracking upstream v0.1.4916 with its models, routing-group and observability pages; mobile gets four native tabs: provider cards with quota windows and daily check-in, usage stats with a native period dropdown, one-click store installs, and account backup that moves signed-in accounts between the desktop and the phone. A quota strip above the composer and a per-turn usage footnote round it out."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/LingMowen/dsh-magpie-hub"
+}

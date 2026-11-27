@@ -1,6 +1,6 @@
 {
   "name": "dsh-local-ai",
-  "version": "0.2.30",
+  "version": "0.2.33",
   "title": {
     "zh": "本地模型（Ollama）",
     "en": "Local models (Ollama)"
