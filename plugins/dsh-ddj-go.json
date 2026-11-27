@@ -1,0 +1,19 @@
+{
+  "name": "dsh-ddj-go",
+  "version": "0.2.3",
+  "title": {
+    "zh": "叮咚鸡 Go",
+    "en": "DingDongJi Go"
+  },
+  "summary": {
+    "zh": "DSH Go 移动端叮咚鸡工作台：原生仪表盘/文件面板与网页版手稿、图稿浏览、下载和 WPS 分享。",
+    "en": "DingDongJi research workbench for DSH Go: native dashboard/files panels plus web-view manuscript and figure browsing, download and WPS sharing."
+  },
+  "category": "productivity",
+  "screenshots": [
+    "https://raw.githubusercontent.com/pddrwang/dsh-ddj-go/main/docs/mobile-dashboard.png",
+    "https://raw.githubusercontent.com/pddrwang/dsh-ddj-go/main/docs/mobile-files.png",
+    "https://raw.githubusercontent.com/pddrwang/dsh-ddj-go/main/docs/mobile-preview.png"
+  ],
+  "homepage": "https://github.com/pddrwang/dsh-ddj-go"
+}

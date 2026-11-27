@@ -1,6 +1,6 @@
 {
   "name": "dsh-memento",
-  "version": "0.5.33",
+  "version": "0.5.35",
   "title": {
     "zh": "跨会话记忆",
     "en": "Cross-session memory"
