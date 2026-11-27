@@ -1,0 +1,15 @@
+{
+  "name": "local-mcp-manager",
+  "version": "0.9.1",
+  "title": {
+    "zh": "MCP 管理器",
+    "en": "MCP Manager"
+  },
+  "summary": {
+    "zh": "DSH 桌面 MCP 工作台：在浏览器里管理 MCP 连接、试运行工具、复核工具变更与排查故障；Web 工作台与 dsh-go 手机原生面板共用同一组服务器。",
+    "en": "MCP workbench for DSH desktop (DSH Web): manage this host’s MCP connections, run tools, review definition changes and troubleshoot failures. The Web workbench and the dsh-go native panel share the same servers."
+  },
+  "category": "tools",
+  "screenshots": [],
+  "homepage": "https://github.com/Aouky7/dsh-mcp-manager"
+}
