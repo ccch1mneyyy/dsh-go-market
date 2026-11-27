@@ -1,6 +1,6 @@
 {
   "name": "dsh-claude-move",
-  "version": "0.4.22",
+  "version": "0.4.23",
   "title": {
     "zh": "会话迁移向导",
     "en": "Session migration wizard"

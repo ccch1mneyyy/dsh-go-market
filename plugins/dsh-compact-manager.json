@@ -1,6 +1,6 @@
 {
   "name": "dsh-compact-manager",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "title": {
     "zh": "压缩管理",
     "en": "Compaction"
