@@ -1,0 +1,19 @@
+{
+  "name": "@twilightrain/dsh-shence",
+  "version": "0.1.0",
+  "title": {
+    "zh": "沈策又过了一天",
+    "en": "Shence's Day"
+  },
+  "summary": {
+    "zh": "在 DSH 面板里过完沈策的 26,910 天：离线文字游戏，存档留在本机",
+    "en": "Play through all 26,910 days of Shence's life in a DSH panel. Offline, saves stay on device"
+  },
+  "category": "other",
+  "screenshots": [
+    "https://raw.githubusercontent.com/TwilightRainDev/dsh-shence/main/screenshots/1-day.png",
+    "https://raw.githubusercontent.com/TwilightRainDev/dsh-shence/main/screenshots/2-story.png",
+    "https://raw.githubusercontent.com/TwilightRainDev/dsh-shence/main/screenshots/3-in-dsh.png"
+  ],
+  "homepage": "https://github.com/TwilightRainDev/dsh-shence"
+}
