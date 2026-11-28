@@ -1,13 +1,13 @@
 {
   "name": "@brody715/dsh-skincare",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "title": {
     "zh": "护肤知识库",
     "en": "Skin care"
   },
   "summary": {
-    "zh": "有出处的护肤科普与分诊助手：13 个中文知识模块、原文来源索引、学习路径、皮肤状态评估与目标跟踪",
-    "en": "AAD-sourced skin-care knowledge base: 13 cited Chinese modules, source index, learning path, skin assessment and goal tracking"
+    "zh": "增强宿主 Agent 的护肤知识与证据核对能力：13 个链接式中文知识模块与 AAD 来源索引，按需讨论护理与就医风险边界，无需建档或打卡",
+    "en": "Skin-care knowledge and evidence checking for the host agent: 13 linked Chinese modules and an AAD source index for on-demand care discussions and medical referral boundaries, with no profile setup or check-ins"
   },
   "category": "other",
   "screenshots": [],
