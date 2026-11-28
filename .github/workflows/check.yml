@@ -117,4 +117,20 @@ jobs:
               await github.rest.actions.createWorkflowDispatch({...context.repo,workflow_id:'check.yml',ref:'main',inputs:{pr:String(pr.number)}});
               return;
             }
-            await github.graphql(`mutation($id:ID!){enablePullRequestAutoMerge(input:{pullRequestId:$id,mergeMethod:SQUASH}){pullRequest{id}}}`,{id:r.pullRequest.id});
+            // GitHub 在 PR 还有未完成的检查时，会用 UNPROCESSABLE 拒掉这次调用
+            // （提示 Pull request is in unstable status）。这里等它变干净再试，
+            // 而不是直接把作业判成失败——一旦失败，这条红记录本身又会把 PR 顶回
+            // unstable，之后的每次重跑都会得到同样的结果。
+            const sleep=(ms)=>new Promise((done)=>setTimeout(done,ms));
+            let armed=false;
+            for(let attempt=0;attempt<20&&!armed;attempt+=1) {
+              try {
+                await github.graphql(`mutation($id:ID!){enablePullRequestAutoMerge(input:{pullRequestId:$id,mergeMethod:SQUASH}){pullRequest{id}}}`,{id:r.pullRequest.id});
+                armed=true;
+              } catch(err) {
+                const message=String((err&&err.message)||'');
+                if(!/unstable status/i.test(message)||attempt===19) throw err;
+                core.info(`Not mergeable yet (${message}); retrying in 15s`);
+                await sleep(15000);
+              }
+            }
