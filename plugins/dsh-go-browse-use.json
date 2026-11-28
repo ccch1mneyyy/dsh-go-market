@@ -1,13 +1,13 @@
 {
   "name": "dsh-go-browse-use",
-  "version": "1.10.0",
+  "version": "1.11.1",
   "title": {
     "zh": "浏览器桥接",
     "en": "Browser bridge"
   },
   "summary": {
-    "zh": "把桥接服务内置进 dsh-go 引擎并注册 browser 工具，让助手直接驱动手机浏览器（Firefox 或支持扩展的 Chromium 系）。可读取页面正文与链接、截图、点击、填写、按键、下拉选择、等待条件、前进后退、接管原生弹窗；snapshot 只返回带 aria-ref 的可交互元素清单以节省上下文。桥接默认关闭，面板或工具内一键开关，端口 8790；扩展用一次性配对码换取各安装实例独立令牌，可逐个吊销。浏览器扩展（Firefox xpi / Chromium zip / crx）在 GitHub Releases 下载安装，插件本体随市场安装。cookies.get 仅返回元数据，真值留在浏览器侧，敏感命令走原生审批，正文与诊断日志转发时脱敏。",
-    "en": "Embed the browser bridge into the dsh-go engine and register a browser tool so the assistant can drive the phone browser directly (Firefox or extension-capable Chromium). Read page text and links, take screenshots, click, fill, press keys, select options, wait for conditions, go back or forward, and handle native dialogs; snapshot returns only interactive elements with aria-ref to save context. The bridge is off by default with one-click toggling in the panel or tool on port 8790; the extension trades a one-time pairing code for a per-install token that can be revoked individually. Browser extensions (Firefox xpi, Chromium zip/crx) are downloaded from GitHub Releases while the plugin itself comes from the market. cookies.get exposes metadata only, real values stay in the browser, sensitive commands require native approval, and forwarded content plus diagnostics are redacted."
+    "zh": "把桥接服务内置进 dsh-go 引擎并注册 browser 工具，让助手直接驱动手机浏览器（Firefox 或支持扩展的 Chromium 系）。可读取页面正文与链接、截图、点击、填写、按键、下拉选择、等待条件、前进后退、接管原生弹窗；snapshot 只返回带 aria-ref 的可交互元素清单以节省上下文。桥接默认关闭，面板或工具内一键开关，端口 8790；扩展用一次性配对码换取各安装实例独立令牌，可逐个吊销。浏览器扩展（Firefox xpi / Chromium zip / crx）在 GitHub Releases 下载安装，插件本体随市场安装。默认宽松模式：浏览器操控不再逐次弹审批，只有执行任意代码每次都要批；面板底部有固定高度的操作日志，记录每条命令的结果。",
+    "en": "Embed the browser bridge into the dsh-go engine and register a browser tool so the assistant can drive the phone browser directly (Firefox or extension-capable Chromium). Read page text and links, take screenshots, click, fill, press keys, select options, wait for conditions, go back or forward, and handle native dialogs; snapshot returns only interactive elements with aria-ref to save context. The bridge is off by default with one-click toggling in the panel or tool on port 8790; the extension trades a one-time pairing code for a per-install token that can be revoked individually. Browser extensions (Firefox xpi, Chromium zip/crx) are downloaded from GitHub Releases while the plugin itself comes from the market. Relaxed by default: browser actions no longer ask for approval one by one — only arbitrary code execution does; a fixed-height operation log at the bottom of the panel records the result of every command."
   },
   "category": "tools",
   "screenshots": [],
