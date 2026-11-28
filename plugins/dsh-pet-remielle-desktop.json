@@ -1,0 +1,17 @@
+{
+  "name": "dsh-pet-remielle-desktop",
+  "version": "1.4.0",
+  "title": {
+    "zh": "蕾米埃尔桌面桌宠",
+    "en": "Remielle Desktop Pet"
+  },
+  "summary": {
+    "zh": "常驻 Windows 桌面的透明桌宠：真实 DSH 会话、图片与 emoji、Markdown 排版、可缩放聊天卡片，四向自适应并支持全屏让位。",
+    "en": "A transparent desktop pet for Windows: real DSH sessions, images and emoji, Markdown replies and a resizable chat card, with four-way layout and full-screen yield."
+  },
+  "category": "other",
+  "screenshots": [
+    "https://raw.githubusercontent.com/Cyrus0719/dsh-pet-remielle/main/docs/chat.png"
+  ],
+  "homepage": "https://github.com/Cyrus0719/dsh-pet-remielle"
+}
