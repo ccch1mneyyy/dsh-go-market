@@ -1,13 +1,13 @@
 {
   "name": "dsh-remote-bridge",
-  "version": "2.17.4",
+  "version": "2.18.0",
   "title": {
     "zh": "远程桥",
     "en": "Remote bridge"
   },
   "summary": {
-    "zh": "把 DSH 的私有协议翻译成手机客户端的双向帧与 REST 接口，并在设置页里提供配对、外网隧道与设备管理；dsh-Go 里带一块只读的「接入」面板和输入区状态条。",
-    "en": "Translates DSH's private protocol into bidirectional WebSocket frames and REST for mobile clients, with pairing, tunnels and device management in the settings page; includes a read-only Access panel and status strip for dsh-Go."
+    "zh": "把 DSH 的私有协议翻译成手机客户端的双向帧与 REST 接口，并在设置页里提供配对、地址范围、外网隧道与设备管理；对话里发 /remote 就能开远程并取码，dsh-Go 里带一块只读的「接入」面板、输入区状态条和客户端下载二维码。",
+    "en": "Translates DSH's private protocol into bidirectional WebSocket frames and REST for mobile clients, with pairing, address scopes, tunnels and device management in the settings page; send /remote in chat to enable remote access and get a code, plus a read-only Access panel, status strip and client download QR codes in dsh-Go."
   },
   "category": "tools",
   "screenshots": [],
